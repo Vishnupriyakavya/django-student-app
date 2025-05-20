@@ -34,7 +34,7 @@ def add_student(request):
 
 
 def delete_student(request, name):
-    student_to_delete = student.objects.get(name=name)  # name=name left name as it is name field right name is the name we are passing
+    student_to_delete = student.objects.get(name=name) 
     student_to_delete.delete()
     return redirect('home')
 
